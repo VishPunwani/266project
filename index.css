@@ -1,105 +1,326 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+
+
+
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "futura md bt";
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    
-}
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 
-html, body{
+  }
+  
+  body {
+    background-color: #C1D0D0;
+    font-family: Roboto, Arial, sans-serif;
+  
+  }
+  
+  .navigation__checkbox {
+      display: none;
+  }
+  
+  .navigation__button {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      height: 5rem;
+      width: 5rem;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 50%;
+      z-index: 300;
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+  }
+  
+  @media screen  and (min-width: 768px) {
+      .navigation__button {
+          top: 4rem;
+          right: 4rem;
+          height: 7rem;
+          width: 7rem;
+      }
+  }
+  
+  .navigation__background {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      background: #4A676A;
+      background-size: cover;
+      background-position: center;
+      z-index: 100;
+      transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  @media screen and (min-width: 768px) {
+      .navigation__background {
+          top: 4.5rem;
+          right: 4.5rem;
+          height: 6rem;
+          width: 6rem;
+      }
+  }
+  
+  .navigation__nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      opacity: 0;
+      width: 0;
+      visibility: hidden;
+      z-index: 200;
+      transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .navigation__list {
+      /*@include center;*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 100%;
+      list-style: none;
+  }
+  
+  .navigation__item {
+      margin: 1rem;
+  }
+  
+  .navigation__link:link,
+  .navigation__link:visited {
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      color: #f4f4f4;
+      font-size: 2.4rem;
+      text-decoration: none;
+      transition: all .2s;
+  }
+  
+  @media(min-width: 768px) {
+      .navigation__link:link,
+      .navigation__link:visited {
+          font-size: 3.8rem;
+      }
+  }
+  
+  .navigation__link span {
+      margin-right: 1.5rem;
+      display: inline-block;
+  }
+  
+  .navigation__link:hover {
+      color: #C1D0D0;
+      transform: scale(1.1);
+  }
+  
+  .navigation__checkbox:checked~.navigation__background {
+      transform: scale(80)
+  }
+  
+  .navigation__checkbox:checked~.navigation__nav {
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+  }
+  
+  .navigation__icon {
+  
+      position: relative;
+      margin-top: 2.5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+      .navigation__icon {
+          margin-top: 3.5rem;
+      }
+  }
+  
+  .navigation__icon,
+  .navigation__icon::before,
+  .navigation__icon::after {
+      display: inline-block;
+      width: 2.2rem;
+      height: 2px;
+      background-color: #4A676A;
+  }
+  
+  @media (min-width: 768px) {
+      .navigation__icon,
+      .navigation__icon::before,
+      .navigation__icon::after {
+          width: 3rem;
+      }
+  }
+  
+  .navigation__icon::before,
+  .navigation__icon::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transition: all 200ms;
+  }
+  
+  .navigation__icon::before {
+      top: -.8rem;
+  }
+  
+  .navigation__icon::after {
+      top: .8rem;
+  }
+  
+  .navigation__button:hover .navigation__icon::before {
+      top: -1rem;
+  }
+  
+  .navigation__button:hover .navigation__icon::after {
+      top: 1rem;
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon {
+      background-color: transparent;
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+  }
+  
+  .navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+  }
+  
+  
+  
+  /*-----------------------*/
+  #by {
+    font-family: 'Arima Madurai', cursive;
+    color: #4A676A;
+    font-size: 10px;
+    position: absolute;
+    top: 22%;
+    right: 2.5%; 
+  }
+  
+  /*
+  light-blue: #C1D0D0;
+  dark-blue: #4A676A;
+  cream: #FFEAA5;
+  yellow: #FFB037;
+  */
+
+.me{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+}
+  .link{
+    position:relative;
+    top:200px;
+
+    
+  }
+  .link a{
+    color:black;
+
+  }
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+
+}
+  .content{
     height: 100vh;
     width: 100vw;
-    margin-top: 0;
-    overflow: hidden;
-}
-.img-container{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.background-img{
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-header {
-    background: #fff;
-    width: 100%;
-    height: 70px;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+.hi{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
 }
-header .logo  {
-   font-family: URW Chancery L, cursive;
-    font-size: 25px;
-    letter-spacing: -3.2px;
-    word-spacing: 2.6px;
-    color: #000000;
-    font-weight: normal;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-     text-transform: none;
+  
+.aboutmesection{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff439c; 
 }
 
-header nav ul {
+.web {
+    color: purple;
+    font-family: Arial;
+    font-size: 25px;
+    animation: fadeIn 10s;
+  }
+
+  cite{
+    animation: fadeIn 15s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .profile_main{
+    width: 100vw;
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    
+  }
+ 
+  p{
+    height:250px;
+    width: 85vw; 
+    font-size: 20px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-header nav ul li a {
-    display: inline-block;
-    color: #000;
-    padding: 5px 0;
-    margin: 0 10px;
-    border: 3px solid transparent;
-    text-transform: uppercase;
-    transition: 0.2s;
+
+ 
+.end-of-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+
 }
-header nav ul li a:hover,
-header nav ul li a.active {
-    border-bottom-color: dodgerblue;
-}
-.hamburger {
-    cursor: pointer;
-    display: none;
-}
-.hamburger div {
-    width: 30px;
-    height: 3px;
-    margin: 5px 0;
-    background: #000;
-}
-@media only screen and (max-width: 700px) {
-    header {
-        padding: 0 30px;
-    }
-}
-@media only screen and (max-width: 1025px) {
-    .hamburger {
-        display: block;
-    }
-    header nav {
-        position: absolute;
-        width: 100%;
-        left: -100%;
-        top: 70px;
-        width: 100%;
-        background: #fff;
-        padding: 30px;
-        transition: 0.3s;
-    }
-    header #nav_check:checked ~ nav {
-        left: 0;
-    }
-    header nav ul {
-        display: block;
-    }
-    header nav ul li a {
-        margin: 5px 0;
-    }
-}
+
+.break{
+        flex-basis: 100%;
+        width: 0px; 
+        height: 0px; 
+        overflow: hidden;
+      }
+

@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="image/png" sizes="16x16" rel="icon" href="/images/Web/icons8-recipe-greeney-16.png">
-    <link rel="stylesheet" type="text/css" href="/index.css">
-    <title>Eliza's Recipe Repository</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <header>
-        <div class="logo"><a href="#" class="brand-logo">ELIZA'sRECIPE-REPOSITORY</a></div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/thirty-or-less.html">30 Minutes or less</a>
-                </li>
-                <li>
-                    <a href="/onepot.html">One Pot</a>
-                </li>
-                <li>
-                    <a href="/random.html">Random</a>
-                </li>
-                <li>
-                    <a href="/favorites.html">Favorites</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!--For Hamburger Logo for responsive devices-->
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+<header>
+    <div class="navigation">
+         <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+         <label for="nav-toggle" class="navigation__button">
+             <span class="navigation__icon" aria-label="toggle navigation menu"></span>
         </label>
-    </header>
-    <section class = 'img-container'>
-        <img src ='/images/wooden-table-with-blurred-background.jpg' class = 'background-img'>
+    <div class="navigation__background"></div>
+        <nav class="navigation__nav" role="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/index.html" class="navigation__link"><span>01-</span>About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/thirty-or-less.html" class="navigation__link"><span>02-</span>30 Minutes or Less</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/random.html" class="navigation__link"><span>03-</span>Random</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/onepot.html" class="navigation__link"><span>04-</span>One Pot</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/contact.html" class="navigation__link"><span>05</span>Contact Me</a>
+            </li>
+      </ul>
+    </nav>
+</header> ='/images/wooden-table-with-blurred-background.jpg' class = 'background-img'>
     </section>
     
         <!--Hero Section/Introduction to Page-->

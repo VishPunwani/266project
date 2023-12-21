@@ -3,90 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link type="image/png" sizes="16x16" rel="icon" href="/images/Web/icons8-recipe-greeney-16.png">
-    <link rel="stylesheet" type="text/css" href="/index.css">
-    <title>Eliza's Recipe Repository</title>
+    <title>Document</title>
 </head>
 <body>
-      <!-- Logo AND Navigation Bar and Navigation Links --> 
-
-      <header>
-        <div class="logo"><a href="#" class="brand-logo">ELIZA'sRECIPE-REPOSITORY</a></div>
-        <input type="checkbox" id="nav_check" hidden>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/index.html">Home</a>
-                </li>
-                <li>
-                    <a href="/thirty-or-less.html">30 Minutes or less</a>
-                </li>
-                <li>
-                    <a href="/onepot.html">One Pot</a>
-                </li>
-                <li>
-                    <a href="/random.html">Random</a>
-                </li>
-                <li>
-                    <a href="/favorites.html">Favorites</a>
-                </li>
-                <li>
-                    <a href="/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!--For Hamburger Logo for responsive devices-->
-        <label for="nav_check" class="hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
+<header>
+    <div class="navigation">
+         <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+         <label for="nav-toggle" class="navigation__button">
+             <span class="navigation__icon" aria-label="toggle navigation menu"></span>
         </label>
-    </header>
-    <section class = 'img-container'>
-        <img src ='/images/wooden-table-with-blurred-background.jpg' class = 'background-img'>
-    </section>
-    
-        <!--Hero Section/Introduction to Page
-     <section>
-        <h1>Welcome to Eliza's Recipe Repository</h1>
-        <h3>Your one stop site for your next recipe</h3>
-        <h4>About Eliza's Recipe Repository</h4>
-        <!--PLACE HOLDER TEXT FOR NOW WRITE UP WILL NE ADDED IN NEXT SECTION 
+    <div class="navigation__background"></div>
+        <nav class="navigation__nav" role="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/index.html" class="navigation__link"><span>01-</span>About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/thirty-or-less.html" class="navigation__link"><span>02-</span>30 Minutes or Less</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/random.html" class="navigation__link"><span>03-</span>Random</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/onepot.html" class="navigation__link"><span>04-</span>One Pot</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/contact.html" class="navigation__link"><span>05</span>Contact Me</a>
+            </li>
+      </ul>
+    </nav>
+</header>
+<div class="content">
+    <div class="hi"> Hi, Welcome to ElizasRecipeRepository</div>
+    <div class="web">“To me, food is as much about the moment, the occasion, the location and the company as it is about the taste.”</div>
+        <cite> – Heston Blumenthal.</cite>
+    <div class="link"><a href="#about" class="fa fa-arrow-circle-o-down fa-4x" aria-hidden="true"></a></div>
+
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div>
+
+
+    <section class = 'aboutmesection'>
+    <h3 class="me">About Me </h3>
+    <div class="profile_main">
         <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Aspernatur vero sint quos amet doloribus consequatur labore? Deleniti fuga ea ad tempora aspernatur, ab quaerat et.
+            Food is the glue that binds the chapters of my family's story, turning ordinary moments into extraordinary memories. In our home, the kitchen is more than a functional space; its the centre piece of the household, 
+            its the place that everyone can go to and find something for whatever they are feeling in that moment. 
+            In times of joy, food accentuates the celebration. In times of sorrow, it provides a comforting refuge. A homemade meal is not just a display of culinary prowess; it's a gesture of love and care, a tangible expression of the bonds that tie us together.
+            Food is a powerful storyteller, narrating tales of heritage, tradition, and the rich tapestry of cultural diversity that defines my family. Coming from different cultural backgrounds, our meals are not just a blend of flavours; they are a fusion of histories, a celebration of the unique journeys that brought us together.
+            As we gather around the table, whether it's a simple weekday dinner or a grand holiday feast, there's a shared understanding that this time is sacred. Phones are set aside, and attention is focused on the present moment. 
+            It's a communion of hearts and palates, where the act of sharing a meal becomes a celebration of family, love, and the simple pleasures that life offers.
         </p>
-    </section>-->
+      <div class="profile">
+      </section>
 
-    
- <!--Display Area for Recipes
- <section class = "display-area">
-    <div class = 'card-title'>
-        <div class = 'card-information'>
-
-        </div>
-    </div>
- </section>
--->
-
- <!--Footer section with social media tags 
-    THERE ARE NO ACTUAL SOCIAL MEDIA FOR THIS SITE AS IT WAS CREATED FOR THIS CLASS SO THE LINKS WILL TAKE YOU TO THE RESPECTIVE EXTERNAL SITE HOME PAGE OF EACH PLATFORM
- <footer>
-    <h3>Follow us on:</h3>
-    <div>
-        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true">Facebook</i></a>
-        <a href='https://www.twitter.com/'><i class="fa fa-twitter" aria-hidden="true">Twitter</i></a>
-        <a href='https://www.linkedin.com/in/'><i class="fa fa-linkedin" aria-hidden="true">LinkedIn</i></a>
-        <a href='https:www.youtube.com'><i class="fa fa-youtube" aria-hidden="true">Youtube</i></a>
-        <a href='https:www.instagram.com/'><i class="fa fa-instagram" aria-hidden="true">Instagram</i></a>
-    </div>
-</footer>
-<div>
-    <h4>AUTHOR NAME : ELIZA CHRISTENSEN</h4>
-    <h4> DATE OF LAST MODIFICATION : OCTOBER 18th 2023</h4>
-  
-  </div>-->
+      <section class="end-of-page">
+      <footer>All Rights Reserved</footer>
+      <div class="break"></div>
+      <div class='fa fa-twitter'></div>
+      <div class='fa fa-facebook'></div>
+      <div class='fa fa-instagram'></div>
+    </section>
 </body>
 </html>
