@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="stylesheet" href="/contact.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -37,42 +37,20 @@
 </header>
 
         <!--Hero Section/Introduction to Page-->
-     <section>
+     <section class = 'heading-greeting'>
         <h1>Contact me</h1>
-        <h3>If you have any questions or complains please contact me at:</h3>
     </section>
 
-    <section class="formcarry-container">
-      <div class="container">
-        <form action="action_page.php">
-      
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="mexico">USA</option>
-            <option value="japan">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>
-    </section>
+    <form>      
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
     
       
  <!--Footer section with social media tags-->
- <footer>
+ <footer class =' end-of-page-contact'>
     <h3>Follow us on:</h3>
     <div>
         <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true">Facebook</i></a>

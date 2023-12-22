@@ -18,7 +18,7 @@
   }
   
   body {
-    background-color: #C1D0D0;
+    background-color: #ab8ee1;
     font-family: Roboto, Arial, sans-serif;
   
   }
@@ -57,7 +57,7 @@
       height: 3rem;
       width: 3rem;
       border-radius: 50%;
-      background: #4A676A;
+      background: #c08497;
       background-size: cover;
       background-position: center;
       z-index: 100;
@@ -210,7 +210,7 @@
   /*-----------------------*/
   #by {
     font-family: 'Arima Madurai', cursive;
-    color: #4A676A;
+    color: #c08497;
     font-size: 10px;
     position: absolute;
     top: 22%;
@@ -266,7 +266,7 @@ a{
 .aboutmesection{
     height: 100vh;
     width: 100vw;
-    background-color: #ff439c; 
+    background-color: #f7af9d; 
 }
 
 .web {
