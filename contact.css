@@ -319,10 +319,16 @@ a{
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-flow: row wrap;
-    
+    background-color: #CC4949;
+    height: 15vh;
+    width:100vw;
+}
 
+.bottom-of-page{
+    display: flex;
+    width: 100vw;
 }
 
 .break{
@@ -331,12 +337,6 @@ a{
         height: 0px; 
         overflow: hidden;
       }
-
-
-
-      
-
-
      
       form { 
         max-width:420px; 
