@@ -27,6 +27,26 @@
   
   }
   
+   /*--------- Fade in affect for quote --------------*/
+
+   @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .web {
+    color: purple;
+    font-family: Arial;
+    font-size: 25px;
+    animation: fadeIn 10s;
+  }
+
+  
+  cite{
+    animation: fadeIn 15s;
+  }
+
+
     /*--------- Header and Navigation bar--------------*/
 
   .navigation__checkbox {
@@ -277,23 +297,13 @@ a{
     background-color: #f7af9d; 
 }
 
-.web {
-    color: purple;
-    font-family: Arial;
-    font-size: 25px;
-    animation: fadeIn 10s;
-  }
 
-  cite{
-    animation: fadeIn 15s;
-  }
+
    .profile_main{
     width: 100vw;
     display:flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  
    
     
   }
@@ -320,13 +330,6 @@ p{
  text-align: center;
 }
 
-    /*--------- Fade in affect for quote --------------*/
-
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
  
 
 /*---------Thirty or Less section--------------*/
@@ -351,13 +354,14 @@ p{
     background-color: #fff;
     color: #4b4c4d;
     margin: 0;
-    height: 25vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1em 2em;
+    padding: 15em 2em;
+    
             
 }
 
@@ -398,6 +402,7 @@ p{
     @media (min-width: 800px) {
         .container{
             height: 15vh;
+            width: 100%;
         }
         .icons-link a{
             font-size: 2rem;    
