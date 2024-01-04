@@ -1,6 +1,10 @@
+  /*--------- Importing Font types from the site below --------------*/
+
+
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+  /*--------- Body, HTML code --------------*/
 
 
 * {
@@ -23,6 +27,8 @@
   
   }
   
+    /*--------- Header and Navigation bar--------------*/
+
   .navigation__checkbox {
       display: none;
   }
@@ -41,15 +47,6 @@
       cursor: pointer;
   }
   
-  @media screen  and (min-width: 768px) {
-      .navigation__button {
-          top: 4rem;
-          right: 4rem;
-          height: 7rem;
-          width: 7rem;
-      }
-  }
-  
   .navigation__background {
       position: fixed;
       top: 2rem;
@@ -63,16 +60,7 @@
       z-index: 100;
       transition: all 800ms cubic-bezier(0.86, 0, 0.07, 1);
   }
-  
-  @media screen and (min-width: 768px) {
-      .navigation__background {
-          top: 4.5rem;
-          right: 4.5rem;
-          height: 6rem;
-          width: 6rem;
-      }
-  }
-  
+     
   .navigation__nav {
       position: fixed;
       top: 0;
@@ -109,15 +97,7 @@
       font-size: 2.4rem;
       text-decoration: none;
       transition: all .2s;
-  }
-  
-  @media(min-width: 768px) {
-      .navigation__link:link,
-      .navigation__link:visited {
-          font-size: 3.8rem;
-      }
-  }
-  
+  } 
   .navigation__link span {
       margin-right: 1.5rem;
       display: inline-block;
@@ -142,7 +122,35 @@
   
       position: relative;
       margin-top: 2.5rem;
+  }/*--------- Navigation Button Responsive code --------------*/
+
+  @media screen  and (min-width: 768px) {
+      .navigation__button {
+          top: 4rem;
+          right: 4rem;
+          height: 7rem;
+          width: 7rem;
+      }
   }
+  
+  @media screen and (min-width: 768px) {
+      .navigation__background {
+          top: 4.5rem;
+          right: 4.5rem;
+          height: 6rem;
+          width: 6rem;
+      }
+  }
+  
+
+  
+  @media(min-width: 768px) {
+      .navigation__link:link,
+      .navigation__link:visited {
+          font-size: 3.8rem;
+      }
+  }
+  
   
   @media screen and (min-width: 768px) {
       .navigation__icon {
@@ -207,7 +215,7 @@
   
   
   
-  /*-----------------------*/
+  /*--------- About me Section--------------*/
   #by {
     font-family: 'Arima Madurai', cursive;
     color: #c08497;
@@ -279,13 +287,7 @@ a{
   cite{
     animation: fadeIn 15s;
   }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
-  .profile_main{
+   .profile_main{
     width: 100vw;
     display:flex;
     height: 100vh;
@@ -300,11 +302,32 @@ p{
     height:250px;
     width: 85vw; 
     font-size: 20px;
-    
+    color: black;
 
 }
- 
 
+.about-me-writeup{
+ color: black;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+ 
+.mean-to-me-writeup{
+    color: black;
+    align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+    /*--------- Fade in affect for quote --------------*/
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+ 
 
 /*---------Thirty or Less section--------------*/
 
@@ -370,6 +393,8 @@ p{
         font-size: .9rem;
     }
     
+      /*--------- Responsive Code for Footer--------------*/
+
     @media (min-width: 800px) {
         .container{
             height: 15vh;
