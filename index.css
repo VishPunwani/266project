@@ -291,45 +291,73 @@ a{
     font-size: 40px;
 }
   
-.aboutmesection{
+.about-us{
     height: 100vh;
-    width: 100vw;
-    background-color: #f7af9d; 
-}
-
-
-
-   .profile_main{
-    width: 100vw;
-    display:flex;
-    height: 100vh;
-  
-   
-    
+    width: 100%;
+    padding: 90px 90px;
+    background: #ddd;
   }
 
-p{
-    height:250px;
-    width: 85vw; 
-    font-size: 20px;
-    color: black;
-
+  @media(max-width: 768px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.about-me-writeup{
- color: black;
- align-items: center;
- justify-content: center;
- text-align: center;
-}
- 
-.mean-to-me-writeup{
-    color: black;
+  .pic{
+    height: auto;
+    width:  302px;
+  }
+  .about{
+    width: 1130px;
+    max-width: 85%;
+    margin: 25px auto;
+    padding: 25px 0;
+    display: flex;
     align-items: center;
- justify-content: center;
- text-align: center;
-}
-
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text{
+    width: 540px;
+  }
+  .text h2{
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .text h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+ 
+  .text p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+  .data{
+    margin-top: 30px;
+  }
+  .hire{
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+  }
+  .hire:hover{
+    background: #000;
+    border: 1px solid #4070f4;
+  }
  
 
 /*---------Thirty or Less section--------------*/
@@ -353,14 +381,14 @@ p{
 .footer-container{
     background-color: #fff;
     color: #4b4c4d;
-    margin: 0;
+    margin: 50px 0 0 0;
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 15em 2em;
+    padding: 15em 5em;
     
             
 }
