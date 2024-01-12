@@ -83,7 +83,6 @@
   }
   
   .navigation__list {
-      /*@include center;*/
       position: absolute;
       top: 50%;
       left: 50%;
@@ -214,12 +213,7 @@
     right: 2.5%; 
   }
   
-  /*
-  light-blue: #C1D0D0;
-  dark-blue: #4A676A;
-  cream: #FFEAA5;
-  yellow: #FFB037;
-  */
+  
 
 .me{
     align-items: center;

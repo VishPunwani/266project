@@ -94,7 +94,6 @@
   }
   
   .navigation__list {
-      /*@include center;*/
       position: absolute;
       top: 50%;
       left: 50%;
@@ -244,14 +243,12 @@
     top: 22%;
     right: 2.5%; 
   }
-  
-  /*
-  light-blue: #C1D0D0;
-  dark-blue: #4A676A;
-  cream: #FFEAA5;
-  yellow: #FFB037;
-  */
 
+  .text-writeup{
+    color: black;
+  }
+  
+ 
 .me{
     align-items: center;
     justify-content: center;
@@ -295,7 +292,7 @@ a{
     height: 100vh;
     width: 100%;
     padding: 90px 90px;
-    background: #ddd;
+    background: pink;
   }
 
   @media(max-width: 768px) {
