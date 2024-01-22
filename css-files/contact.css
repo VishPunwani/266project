@@ -314,7 +314,7 @@ a{
       form { 
         max-width:420px; 
         margin:auto; 
-        padding-top: 50px;
+        padding-top: 75px;
         padding-bottom: 250px;
     }
       
@@ -368,6 +368,10 @@ a{
         align-items: center;
       }
 
+      .validation{
+        height: 50px;
+        width: 100px;
+      }
 
 /*  Footer Code */
 

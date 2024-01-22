@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css-files/contact.css" type="text/css">
+    <script src="/contact.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -42,11 +43,11 @@
     </section>
 
     <form>      
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <input name="name" type="text" class="feedback-input" placeholder="Name" id = 'first-box' />   
+      <input name="email" type="text" class="feedback-input" placeholder="Email"  id="second-box" /> 
       <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT"/>
-      <p></p>
+      <input type="submit" value="SUBMIT" onclick="formCheck(); return false"/><!-- defer value="SUBMIT"-->
+      <p class = 'validation' id = 'validation-box'></p>
     </form>
     
       
