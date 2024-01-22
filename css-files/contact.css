@@ -369,8 +369,12 @@ a{
       }
 
       .validation{
+        color: black;
         height: 50px;
-        width: 100px;
+        width: 420px;
+        justify-content: center;    
+        align-items: center;
+        text-align: center;
       }
 
 /*  Footer Code */

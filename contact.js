@@ -8,7 +8,7 @@ function formCheck() {
 
     
     function updateBorderStyle(element, isValid) {
-      var borderStyle = isValid ? "1px solid #e6e6e6" : "1px solid #ff4500";
+      var borderStyle = isValid ? "5px solid #000000" : "5px solid #800080";
       element.style.border = borderStyle;
     }
     //This function is being named updateBorderStyle and it is being declared with
@@ -23,6 +23,10 @@ function formCheck() {
 
     var input2 = document.getElementById('second-box').value.trim();
   //This is the variable “input” being assigned to the value of the element with the id of “second-box” and the value of the
+    //user input and then the .trim method will exclude any space or white space from the input at the end 
+
+    var input3 = document.getElementById('comment-box').value.trim();
+//This is the variable “input” being assigned to the value of the element with the id of "comment-box” and the value of the
     //user input and then the .trim method will exclude any space or white space from the input at the end 
 
     if (input.length > 0) {
@@ -54,7 +58,26 @@ function formCheck() {
 // and if it is not greater than 0 then we will utilize our updateBorderStyler function by passing through the arguments of
 // "second-box" as the element and false as the isValid and then the code on the right side of the colon will execute
 
-    if (arr.length === 2) {
+
+if (input3.length > 0) {
+  updateBorderStyle(document.getElementById('comment-box'), true);
+  arr.push(true);
+
+//This block of code above uses an “ if else statement” and it is checking of the value of input.length is greater than 0.
+// if it is greater than 0 then we will utilize our updateBorderStyler function from earlier by passing through the arguments of
+// "second-box" as the element and true as the isValid and then the code on the left side of the colon will execute
+// lastly we will push this information into our empty arr variable
+} else {
+  updateBorderStyle(document.getElementById('comment-box'), false);
+}
+
+// and if it is not greater than 0 then we will utilize our updateBorderStyler function by passing through the arguments of
+// "second-box" as the element and false as the isValid and then the code on the right side of the colon will execute
+
+
+
+
+    if (arr.length === 3) {
       //This code starts off again with another if else statement, 
       //however this time we are seeing whether or not the length of the variable arr is equal 
       //(or has 2) items inside of it and if you can remember from our code above, 
