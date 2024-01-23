@@ -42,14 +42,17 @@
         <h1>Contact me</h1>
     </section>
 
-    <form>      
-      <input name="name" type="text" class="feedback-input" placeholder="Name" id = 'first-box' />   
-      <input name="email" type="text" class="feedback-input" placeholder="Email"  id="second-box" /> 
-      <textarea name="text" class="feedback-input" placeholder="Comment" id="comment-box"></textarea>
-      <input type="submit" value="SUBMIT" onclick="formCheck(); return false"/><!-- defer value="SUBMIT"-->
-      <p class = 'validation' id = 'validation-box'></p>
+    <form>
+      <input name="name" type="text" class="feedback-input" placeholder="Enter your name" id="first-box" />
+      <input name="email" type="text" class="feedback-input" placeholder="Enter your email" id="second-box" />
+      <textarea name="text" class="feedback-input" placeholder="Enter your comment" id="comment-box"></textarea>
+      <button type="submit" onclick="formCheck(); return false;">SUBMIT</button>
+      <span class='validation' id='validation-box'></span>
     </form>
     
+     
+      
+      
       
  <!--Footer section with social media tags-->
  <footer>
@@ -79,5 +82,5 @@
     
     </div>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
